@@ -4,11 +4,11 @@ import requests from "./Config/requests"
 
 function App() {
   return (
-    <div className="App">
-      <h1>Netflix-Home Page</h1>
+    <div className="app">
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
+        isLargeRow
       />
       <Row title="Trending now" fetchUrl={requests.fetchTrending} />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
